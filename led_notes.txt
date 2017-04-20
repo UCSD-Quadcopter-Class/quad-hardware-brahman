@@ -1,0 +1,6 @@
+We found our LED design on Digikey the URL is (https://www.digikey.com/product-detail/en/cree-inc/XQARED-02-0000-000000W01/XQARED-02-0000-000000W01CT-ND/5806748
+).
+
+We followed the datasheet to create a device/symbol/and package.
+We specifically wanted LED's for debugging purposes so we included them
+for signals coming out of our breakout header.
