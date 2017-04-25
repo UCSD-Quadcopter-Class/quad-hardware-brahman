@@ -1,0 +1,16 @@
+﻿Filtering is strange? Currently this is not an RC filter.
+Mosfet symbol is strange, I don’t know what each pin is.
+What is Bat1 for, or J2?
+TX1/RX1 or 0 for FTDI? I think 0
+
+
+  
+  
+
+
+
+EN on voltage regulator not pulled high, you get no system power.
+No I2C pullups
+Pin 5,6 D/C
+Pin 7,8 D/C
+Bad naming convention
