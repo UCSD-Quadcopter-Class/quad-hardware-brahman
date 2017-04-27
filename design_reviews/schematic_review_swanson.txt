@@ -1,0 +1,21 @@
+
+FLYBACK and FILTERED are connect in all your motor controllers.
+
+Filter cap on otor controller input should 0.1uF
+
+The schematic symbol for your mosfet is pretty poor.  The pin names are meaningless and you should use a standard transistor symobl.
+
+The jumper should be between the positive battery terminal and VBAT, not GND.
+
+you need to connect EN on your voltage regulator to VCC
+
+you have now attributes set and no value on your LED resistors (R1, etc.)
+
+missing pullups on I2C bus
+
+Many missing connection IMU.  Read the datasheet.  It is not sufficient to just replicate the schematic in the datasheet.
+
+Your FTDI connector has several errors.
+
+
+
