@@ -1,0 +1,1 @@
+* Antenna and Antenna Drivero The right end of the antenna might be too close to the metal layer.* IMUo IMU capacitors can possibly be closer to the IMU.* Headerso FTDI headers should be closer to the edge of the quadcopter.* Motor Drivero The motor driver wires can be thicker
