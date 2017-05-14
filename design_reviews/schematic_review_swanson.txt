@@ -13,9 +13,26 @@ you have now attributes set and no value on your LED resistors (R1, etc.)
 
 missing pullups on I2C bus
 
-Many missing connection IMU.  Read the datasheet.  It is not sufficient to just replicate the schematic in the datasheet.
+Many missing connection IMU.  Read the datasheet.  It is not sufficient to just replicate the schematic in the datasheeut.
 
 Your FTDI connector has several errors.
+
+
+
+THe TX and RX lines need be swapped on your serial and FTDI
+
+You don't need pullup resistors on the inputs to the IMU
+
+For C26 and C24, you to use one of the existing parts in the the prebuilt library.  Or at least set the attributes correctly.
+
+Your motor controllers are not conneted to your microcontroller.
+
+C6, C11, C16, C14, C3, C28, C27, C2 are all decoupling caps that connect VBAT to GND.  They should go from VBAT to BAT_GND.
+
+You are powering your IMU with VBAT.
+
+
+
 
 
 
