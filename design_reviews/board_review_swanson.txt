@@ -1,0 +1,29 @@
+
+commit c1ea8e54750e5d83f45c0c9a19c840519a9e2c9a
+
+Your schematic and board are inconsistent.  Run tools->ERC in the schematic editor.    Delete and re-add the parts it says are missing from the board.
+
+Your board is currently unrouted, so I didn't look at it.
+
+Power
+
+
+DRC
+
+Motor holders
+
+Pours
+
+Antenna
+
+Oscillator
+
+decoupling
+
+Voltage regulator
+
+Reset button
+
+Misc
+
+Jumper
