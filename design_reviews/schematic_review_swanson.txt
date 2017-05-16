@@ -18,7 +18,6 @@ Many missing connection IMU.  Read the datasheet.  It is not sufficient to just 
 Your FTDI connector has several errors.
 
 
-
 THe TX and RX lines need be swapped on your serial and FTDI
 
 You don't need pullup resistors on the inputs to the IMU
@@ -32,7 +31,10 @@ C6, C11, C16, C14, C3, C28, C27, C2 are all decoupling caps that connect VBAT to
 You are powering your IMU with VBAT.
 
 
+commit c1ea8e54750e5d83f45c0c9a19c840519a9e2c9a
 
 
+The resistor and capacitor on your PWM filters are backwards.  the resistor should come befor the cap.
 
+One ond of R3 is not connected even though it appears to be.
 
