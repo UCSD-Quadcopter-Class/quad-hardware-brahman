@@ -3924,11 +3924,11 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="GND47" gate="1" x="-78.74" y="-60.96"/>
 <instance part="C22" gate="G$1" x="152.4" y="337.82" rot="R90"/>
 <instance part="GND39" gate="1" x="58.42" y="332.74"/>
-<instance part="P+1" gate="3V" x="96.52" y="378.46"/>
-<instance part="P+2" gate="3V" x="78.74" y="320.04"/>
-<instance part="P+4" gate="3V" x="60.96" y="284.48" rot="R90"/>
-<instance part="P+9" gate="3V" x="40.64" y="193.04" rot="R180"/>
-<instance part="P+10" gate="3V" x="149.86" y="220.98" rot="R180"/>
+<instance part="P+1" gate="3V" x="149.86" y="220.98" rot="R180"/>
+<instance part="P+2" gate="3V" x="40.64" y="193.04" rot="R180"/>
+<instance part="P+4" gate="3V" x="63.5" y="284.48" rot="R90"/>
+<instance part="P+9" gate="3V" x="78.74" y="320.04"/>
+<instance part="P+10" gate="3V" x="96.52" y="378.46"/>
 </instances>
 <busses>
 </busses>
@@ -4109,10 +4109,11 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="U$1" gate="G$1" pin="P$1"/>
 <pinref part="GND30" gate="1" pin="GND"/>
 <wire x1="-81.28" y1="119.38" x2="-88.9" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="-88.9" y1="119.38" x2="-88.9" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="BATT1" gate="G$1" pin="N"/>
+<wire x1="-88.9" y1="119.38" x2="-88.9" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="-91.44" y1="127" x2="-91.44" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="-91.44" y1="119.38" x2="-88.9" y2="119.38" width="0.1524" layer="91"/>
+<junction x="-88.9" y="119.38"/>
 </segment>
 <segment>
 <wire x1="144.78" y1="73.66" x2="144.78" y2="58.42" width="0.1524" layer="91"/>
@@ -4460,6 +4461,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="U$15" gate="G$1" pin="SDA/SDI/SDO"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="271.78" x2="60.96" y2="271.78" width="0.1524" layer="91"/>
+<label x="63.5" y="276.86" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -4477,6 +4479,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="U$15" gate="G$1" pin="SCL/SPC"/>
 <pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="68.58" y1="294.64" x2="60.96" y2="294.64" width="0.1524" layer="91"/>
+<label x="63.5" y="297.18" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PB7" class="0">
@@ -4512,10 +4515,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="U3" gate="G$1" pin="PB5(OC1A/PCINT5)"/>
 </segment>
 <segment>
-<wire x1="-134.62" y1="210.82" x2="-139.7" y2="210.82" width="0.1524" layer="91"/>
-<label x="-139.7" y="210.82" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J3" gate="G$1" pin="PB5"/>
 <wire x1="215.9" y1="147.32" x2="226.06" y2="147.32" width="0.1524" layer="91"/>
 <label x="226.06" y="147.32" size="1.778" layer="95" xref="yes"/>
@@ -4524,6 +4523,15 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="7.62" x2="124.46" y2="7.62" width="0.1524" layer="91"/>
 <label x="124.46" y="7.62" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="-134.62" y1="210.82" x2="-143.002" y2="210.82" width="0.1524" layer="91"/>
+<label x="-143.002" y="210.82" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="-124.46" y1="205.74" x2="-134.62" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="-134.62" y1="205.74" x2="-134.62" y2="210.82" width="0.1524" layer="91"/>
+<junction x="-134.62" y="210.82"/>
 </segment>
 </net>
 <net name="PB4" class="0">
@@ -4666,6 +4674,8 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="-58.42" y1="137.16" x2="-58.42" y2="127" width="0.1524" layer="91"/>
 <wire x1="-58.42" y1="127" x2="-45.72" y2="127" width="0.1524" layer="91"/>
 <label x="-45.72" y="132.08" size="1.778" layer="95" rot="R90" xref="yes"/>
+<junction x="-45.72" y="127"/>
+<junction x="-38.1" y="127"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="VBAT"/>
@@ -4725,14 +4735,8 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="325.12" y1="233.68" x2="330.2" y2="233.68" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="D"/>
 <wire x1="322.58" y1="223.52" x2="342.9" y2="223.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="2">
-<segment>
-<pinref part="C10" gate="G$1" pin="1"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="-124.46" y1="205.74" x2="-134.62" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="-134.62" y1="205.74" x2="-134.62" y2="210.82" width="0.1524" layer="91"/>
+<junction x="322.58" y="224.79"/>
+<junction x="322.58" y="238.76"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -4817,6 +4821,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="132.08" x2="15.24" y2="132.08" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="3V" pin="3V"/>
+<junction x="5.08" y="132.08"/>
 </segment>
 <segment>
 <wire x1="55.88" y1="142.24" x2="55.88" y2="139.7" width="0.1524" layer="91"/>
@@ -4849,37 +4854,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="P+12" gate="3V" pin="3V"/>
 </segment>
 <segment>
-<wire x1="106.68" y1="312.42" x2="106.68" y2="320.04" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="320.04" x2="114.3" y2="320.04" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="312.42" x2="114.3" y2="320.04" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="320.04" x2="114.3" y2="368.3" width="0.1524" layer="91"/>
-<junction x="114.3" y="320.04"/>
-<wire x1="114.3" y1="368.3" x2="96.52" y2="368.3" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="368.3" x2="96.52" y2="363.22" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="363.22" x2="88.9" y2="363.22" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="363.22" x2="81.28" y2="363.22" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="363.22" x2="96.52" y2="358.14" width="0.1524" layer="91"/>
-<junction x="96.52" y="363.22"/>
-<pinref part="C28" gate="G$1" pin="1"/>
-<pinref part="C27" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="363.22" x2="81.28" y2="360.68" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="368.3" x2="96.52" y2="375.92" width="0.1524" layer="91"/>
-<junction x="96.52" y="368.3"/>
-<wire x1="88.9" y1="363.22" x2="88.9" y2="358.14" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<pinref part="U$15" gate="G$1" pin="VDD2"/>
-<pinref part="U$15" gate="G$1" pin="VDD1"/>
+<pinref part="U$15" gate="G$1" pin="DEN_A/G"/>
+<wire x1="149.86" y1="223.52" x2="149.86" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="3V" pin="3V"/>
-</segment>
-<segment>
-<wire x1="78.74" y1="312.42" x2="78.74" y2="317.5" width="0.1524" layer="91"/>
-<pinref part="U$15" gate="G$1" pin="VDD_IO1"/>
-<pinref part="P+2" gate="3V" pin="3V"/>
-</segment>
-<segment>
-<wire x1="68.58" y1="284.48" x2="63.5" y2="284.48" width="0.1524" layer="91"/>
-<pinref part="U$15" gate="G$1" pin="VDDIO2"/>
-<pinref part="P+4" gate="3V" pin="3V"/>
 </segment>
 <segment>
 <wire x1="40.64" y1="294.64" x2="40.64" y2="271.78" width="0.1524" layer="91"/>
@@ -4908,12 +4885,42 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <junction x="40.64" y="271.78"/>
 <pinref part="U$15" gate="G$1" pin="SDO_M"/>
 <wire x1="78.74" y1="226.06" x2="78.74" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="P+2" gate="3V" pin="3V"/>
+</segment>
+<segment>
+<wire x1="68.58" y1="284.48" x2="66.04" y2="284.48" width="0.1524" layer="91"/>
+<pinref part="U$15" gate="G$1" pin="VDDIO2"/>
+<pinref part="P+4" gate="3V" pin="3V"/>
+</segment>
+<segment>
+<wire x1="78.74" y1="312.42" x2="78.74" y2="317.5" width="0.1524" layer="91"/>
+<pinref part="U$15" gate="G$1" pin="VDD_IO1"/>
 <pinref part="P+9" gate="3V" pin="3V"/>
 </segment>
 <segment>
-<pinref part="U$15" gate="G$1" pin="DEN_A/G"/>
+<wire x1="106.68" y1="312.42" x2="106.68" y2="320.04" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="320.04" x2="114.3" y2="320.04" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="312.42" x2="114.3" y2="320.04" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="320.04" x2="114.3" y2="368.3" width="0.1524" layer="91"/>
+<junction x="114.3" y="320.04"/>
+<wire x1="114.3" y1="368.3" x2="96.52" y2="368.3" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="368.3" x2="96.52" y2="363.22" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="363.22" x2="88.9" y2="363.22" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="363.22" x2="81.28" y2="363.22" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="363.22" x2="96.52" y2="358.14" width="0.1524" layer="91"/>
+<junction x="96.52" y="363.22"/>
+<pinref part="C28" gate="G$1" pin="1"/>
+<pinref part="C27" gate="G$1" pin="1"/>
+<wire x1="81.28" y1="363.22" x2="81.28" y2="360.68" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="368.3" x2="96.52" y2="375.92" width="0.1524" layer="91"/>
+<junction x="96.52" y="368.3"/>
+<wire x1="88.9" y1="363.22" x2="88.9" y2="358.14" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="U$15" gate="G$1" pin="VDD2"/>
+<pinref part="U$15" gate="G$1" pin="VDD1"/>
+<junction x="88.9" y="363.22"/>
+<junction x="81.28" y="363.22"/>
 <pinref part="P+10" gate="3V" pin="3V"/>
-<wire x1="149.86" y1="223.52" x2="149.86" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -4967,7 +4974,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="-60.96" y1="127" x2="-60.96" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DTR" class="0">
+<net name="N$21" class="0">
 <segment>
 <pinref part="JP9" gate="G$1" pin="1"/>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -5013,6 +5020,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <junction x="-109.22" y="233.68"/>
 <pinref part="U$4" gate="G$1" pin="D"/>
 <wire x1="-109.22" y1="218.44" x2="-88.9" y2="218.44" width="0.1524" layer="91"/>
+<junction x="-109.22" y="219.71"/>
 </segment>
 </net>
 <net name="FILTEREDNW" class="2">
@@ -5046,6 +5054,8 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="U$5" gate="G$1" pin="D"/>
 <wire x1="-101.6" y1="-25.4" x2="-78.74" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="-78.74" y1="-25.4" x2="-78.74" y2="-27.94" width="0.1524" layer="91"/>
+<junction x="-101.6" y="-25.4"/>
+<junction x="-101.6" y="-12.7"/>
 </segment>
 </net>
 <net name="FILTEREDSW" class="2">
@@ -5079,6 +5089,8 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <wire x1="312.42" y1="-22.86" x2="317.5" y2="-22.86" width="0.1524" layer="91"/>
 <pinref part="U$7" gate="G$1" pin="D"/>
 <wire x1="309.88" y1="-33.02" x2="330.2" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="309.88" y="-31.75"/>
+<junction x="309.88" y="-17.78"/>
 </segment>
 </net>
 <net name="FILTEREDSE" class="2">
