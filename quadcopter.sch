@@ -3553,15 +3553,14 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </deviceset>
 </devicesets>
 </library>
-<library name="LEDs">
+<library name="LEDs_new">
 <packages>
 <package name="RED_LED">
 <smd name="P$1" x="-0.475" y="0" dx="1.6" dy="0.65" layer="1" rot="R90"/>
 <smd name="P$3" x="0.475" y="0" dx="1.6" dy="0.65" layer="1" rot="R90"/>
-<wire x1="-1.15" y1="1.2" x2="1.15" y2="1.2" width="0.127" layer="1"/>
-<wire x1="-1.15" y1="-1.2" x2="1.15" y2="-1.2" width="0.127" layer="1"/>
-<wire x1="-1.15" y1="1.15" x2="-1.15" y2="-1.15" width="0.127" layer="1"/>
-<wire x1="1.15" y1="1.15" x2="1.15" y2="-1.15" width="0.127" layer="1"/>
+<rectangle x1="-0.75" y1="-0.75" x2="0.75" y2="0.75" layer="51"/>
+<text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -3707,16 +3706,16 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <part name="GND21" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND22" library="quadparts_prebuilt" deviceset="BAT_GND" device=""/>
 <part name="P+12" library="quadparts_brandon" deviceset="3V" device=""/>
-<part name="U$10" library="LEDs" deviceset="RED_LED" device="" value="RED"/>
+<part name="U$10" library="LEDs_new" deviceset="RED_LED" device="" value="RED"/>
 <part name="GND23" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="R1" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805" value="330"/>
-<part name="U$11" library="LEDs" deviceset="RED_LED" device="" value="RED"/>
+<part name="U$11" library="LEDs_new" deviceset="RED_LED" device="" value="RED"/>
 <part name="GND24" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="R7" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805" value="330"/>
-<part name="U$12" library="LEDs" deviceset="RED_LED" device="" value="RED"/>
+<part name="U$12" library="LEDs_new" deviceset="RED_LED" device="" value="RED"/>
 <part name="GND26" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="R8" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805" value="330"/>
-<part name="U$13" library="LEDs" deviceset="RED_LED" device="" value="RED"/>
+<part name="U$13" library="LEDs_new" deviceset="RED_LED" device="" value="RED"/>
 <part name="GND28" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="R15" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805" value="330"/>
 <part name="U$14" library="quadparts_prebuilt" deviceset="ANTENNA2" device="SMD5"/>
@@ -3846,7 +3845,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <instance part="JP9" gate="G$1" x="132.08" y="144.78"/>
 <instance part="GND1" gate="1" x="10.16" y="27.94"/>
 <instance part="GND2" gate="1" x="20.32" y="27.94"/>
-<instance part="GND3" gate="1" x="91.44" y="2.54"/>
+<instance part="GND3" gate="1" x="91.44" y="5.08"/>
 <instance part="GND6" gate="1" x="106.68" y="38.1"/>
 <instance part="GND7" gate="1" x="116.84" y="38.1"/>
 <instance part="GND8" gate="1" x="127" y="38.1"/>
@@ -3933,7 +3932,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <busses>
 </busses>
 <nets>
-<net name="GND" class="2">
+<net name="GND" class="0">
 <segment>
 <pinref part="JPADDED" gate="G$1" pin="6"/>
 <wire x1="185.42" y1="152.4" x2="190.5" y2="152.4" width="0.1524" layer="91"/>
@@ -4020,7 +4019,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pinref part="D6" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<wire x1="91.44" y1="17.78" x2="91.44" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="17.78" x2="91.44" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="17.78" x2="91.44" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="20.32" x2="91.44" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="20.32" x2="91.44" y2="17.78" width="0.1524" layer="91"/>
