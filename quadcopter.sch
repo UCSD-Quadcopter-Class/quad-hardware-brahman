@@ -3321,19 +3321,19 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <pad name="BAT_GND" x="20.32" y="0" drill="1.1" diameter="1.65" stop="no"/>
 </package>
 <package name="N-CHANNEL-MOSFET">
-<smd name="P$1" x="0" y="1.0414" dx="0.5588" dy="0.7366" layer="1"/>
-<smd name="P$2" x="-0.762" y="-1.0414" dx="0.5588" dy="0.7366" layer="1"/>
-<smd name="P$3" x="0.762" y="-1.0414" dx="0.5588" dy="0.7366" layer="1"/>
+<smd name="P$1" x="0" y="1.5494" dx="2.8956" dy="2.0574" layer="1"/>
+<smd name="P$2" x="-0.762" y="-1.2954" dx="1.000759375" dy="1.4986" layer="1"/>
+<smd name="P$3" x="0.762" y="-1.2954" dx="1.000759375" dy="1.4986" layer="1"/>
 <wire x1="-1.2319" y1="-0.6223" x2="1.2319" y2="-0.6223" width="0.127" layer="21"/>
 <wire x1="-1.2319" y1="-0.6223" x2="-1.2319" y2="0.6223" width="0.127" layer="21"/>
 <wire x1="-1.2319" y1="0.6223" x2="1.2319" y2="0.6223" width="0.127" layer="21"/>
 <wire x1="1.2319" y1="0.6223" x2="1.2319" y2="-0.6223" width="0.127" layer="21"/>
 <text x="5.08" y="5.08" size="2.032" layer="25" font="vector">&gt;NAME</text>
 <text x="43.18" y="2.54" size="11.176" layer="27" font="vector">&gt;VALUE</text>
-<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-2.54" width="0.127" layer="39"/>
+<wire x1="-2.54" y1="3.81" x2="-2.54" y2="-2.54" width="0.127" layer="39"/>
 <wire x1="-2.54" y1="-2.54" x2="2.54" y2="-2.54" width="0.127" layer="39"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="2.54" width="0.127" layer="39"/>
-<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="39"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="3.81" width="0.127" layer="39"/>
+<wire x1="-2.54" y1="3.81" x2="2.54" y2="3.81" width="0.127" layer="39"/>
 </package>
 <package name="LSM9DS1TR_9_AXIS_IMU">
 <wire x1="-1.75" y1="1.5" x2="1.75" y2="1.5" width="0.127" layer="21"/>
